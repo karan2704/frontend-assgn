@@ -89,7 +89,7 @@ app.post('/mail', (req, res) => {
         if(err) {
             res.status(500).json({
                 err: true,
-                message: 'Could send email'                
+                message: 'Could not send email'                
             })
             console.log(err);
         } else{
